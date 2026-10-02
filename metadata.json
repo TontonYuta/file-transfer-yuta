@@ -1,0 +1,6 @@
+{
+  "name": "AirDrop Web",
+  "description": "Fast, secure cross-device file sharing with instant QR codes, temporary links, and safe previews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

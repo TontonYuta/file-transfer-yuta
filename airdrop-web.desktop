@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=AirDrop Web
+GenericName=File Transfer
+Comment=Truyền và nhận file nhanh chóng qua Wi-Fi LAN và Web QR
+Exec=bash -c 'APP_DIR="$(dirname "$(readlink -f "%k")")"; cd "$APP_DIR" && ./start-app.sh'
+Icon=network-wireless
+Terminal=false
+Categories=Network;FileTransfer;Utility;
+Keywords=airdrop;share;transfer;wifi;lan;qr;file;
+StartupNotify=true
+Actions=StopServer;
+
+[Desktop Action StopServer]
+Name=Dừng máy chủ (Stop AirDrop Web)
+Exec=bash -c 'APP_DIR="$(dirname "$(readlink -f "%k")")"; cd "$APP_DIR" && ./stop-app.sh'
